@@ -1,6 +1,10 @@
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+class page_locators:
+    LOCATOR_EMAIL = (By.CSS_SELECTOR, '[class="subheading mb-5"] a')
+    
 class BasePage:
 
     def __init__(self, driver):
@@ -20,3 +24,7 @@ class BasePage:
 
     def go_to_site(self):
         return self.driver.get(self.base_url)
+
+    def get_email(self):
+        el = self.find_element(page_locators.LOCATOR_EMAIL, time=2)
+        return el.text
