@@ -1,5 +1,3 @@
-import pytest
-
 from tests.helper.base_app import BasePage
 
 
