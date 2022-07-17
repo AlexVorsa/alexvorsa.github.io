@@ -1,8 +1,11 @@
+"""
+Basic tests
+"""
 from tests.helper.base_app import BasePage
-
 
 def test_get_url(browser):
     """
+    Get URL
     """
     page = BasePage(browser)
     page.go_to_site()
@@ -16,4 +19,4 @@ def test_email(browser):
     page = BasePage(browser)
     page.go_to_site()
 
-    assert page.get_email() == "ALEKSANDR.VORSA@GMAIL.COM", 'Unexpected email address'
+    assert page.get_email() == "ALEKSANDR.VORSA@YANDEX.RU", 'Unexpected email address'
