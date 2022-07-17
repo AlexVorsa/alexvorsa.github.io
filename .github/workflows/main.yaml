@@ -18,8 +18,8 @@ jobs:
     - name: Activate virtual environment and install module
       run: |
         python -m venv env
+        source env/bin/activate
         echo "VIRTUAL ENV:" $VIRTUAL_ENV
-        source $VIRTUAL_ENV/bin/activate        
         pip install -r requirements.txt
     - name: Analysing the code with pylint
       run: |
