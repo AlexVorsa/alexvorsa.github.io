@@ -12,6 +12,7 @@ def test_get_url(browser):
 
     assert True, 'Unexpected state'
 
+
 def test_email(browser):
     """
     Check email
