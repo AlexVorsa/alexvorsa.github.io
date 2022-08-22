@@ -10,7 +10,8 @@ def test_get_url(browser):
     page = BasePage(browser)
     page.go_to_site()
 
-    assert True, 'Tralala'
+    assert True, 'Unexpected state'
+
 
 def test_email(browser):
     """
