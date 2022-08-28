@@ -20,4 +20,4 @@ def test_email(browser):
     page = BasePage(browser)
     page.go_to_site()
 
-    assert page.get_email() == "ALEKSANDR.VORSA@YANDEX.RU", 'Unexpected email address'
+    assert page.get_email() == "ALEKSANDR.VORSA@YANDEX.R", 'Unexpected email address'
